@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>QUICK SNACKS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- font link -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Alex+Brush&family=Fjalla+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- icon link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- css link-->
+    <link rel="stylesheet" href="assets/css/review.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+    <!-- ==============top-mininav-start=============== -->
+    <div class="top-navbar">
+        <div class="top-right">
+            <h6 class="top-nav-line">Healthy Bites for Busy Lives</h6>
+        </div>
+        <div class="top-left">
+            <a href="https://www.facebook.com/share/1B8F1axPrP/" target="_blank" id="top-link"><i
+                    class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/aptechscheme33?igsh=cWRkdjJkcDZicDZ0" target="_blank" id="top-link"><i
+                    class="fa fa-instagram"></i></a>
+            <a href="contact.html" target="_blank" id="top-link"><i class="fa fa-phone"></i></a>
+        </div>
+    </div>
+    <!-- ==============top-mininav-stop=============== -->
+    <!--======== navbar start =========-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a href="index.html">
+                <img src="assets/img/logo2.png" alt="" class="limg">
+            </a>
+
+            <h4 class="quick">Quick Snacks</h4>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navbar-bg" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-pill">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <!-- Main Dropdown -->
+                    <li class="dropdown">
+                        <a class="nav-link  dropdown-toggle" href="index.html#categories" role="button"
+                            data-bs-toggle="dropdown">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="healthy.html">Healthy snacks</a></li>
+                            <li><a class="dropdown-item" href="easyonstomach.html">Easy on stomach</a></li>
+                            <li><a class="dropdown-item" href="lightsnacks.html">Snacks for kids</a></li>
+                            <li><a class="dropdown-item" href="smoothies.html">Smoothies</a></li>
+
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="nav-link " href="index.html#popular">Recipes</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="review.html">Reviews</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="index.html#about">About us</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="contact.html">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--======== navbar end =========-->
+    <div class="container text-center my-4">
+        <h1 class="review-title">What Our Customers Say</h1>
+        <p class="review-subtitle">
+            Snack lovers are talking! 🍪
+            See what people say about our quick and healthy snacks.
+        </p>
+    </div>
+
+    <!-- ===========left SIDE============= -->
+    <div class="container my-review-cont">
+        <div class="row my-review-row">
+            <div class="col-12 col-md-6">
+
+                <!-- ===== Div 1 graphbox start===== -->
+                <div class="box">
+                    <div>
+                        <canvas id="reviewsChart"></canvas>
+                    </div>
+                </div>
+                <!-- =======Div 1 graphbox end====== -->
+
+                <!-- ======Div 2 feedback container start====== -->
+                <div class="feedback-box">
+                    <h2 class="recent-feedback">Recent Feedbacks</h2>
+
+                    <!-- Scrollable container -->
+                    <div class="feedback-container">
+
+                        <!-- ==========feedback card 1============ -->
+                        <div class="feedback-card">
+                            <img class="feeds-image" src="assets/img/ahmad.jpeg">
+                            <div class="feedback-text">
+                                <div class="feedback-stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                                <h6>Ahmad</h6>
+                                <p>The snack recipes are easy to follow and use healthy ingredients. Adding more variety
+                                    and quick options would make them even better.</p>
+                            </div>
+                        </div>
+                        <!-- ==========feedback card 2============ -->
+                        <div class="feedback-card">
+                            <img class="feeds-image" src="assets/img/aina.jpg">
+                            <div class="feedback-text">
+                                <div class="feedback-stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                                <h6>Aina</h6>
+                                <p>Great recipes with clear steps and nutritious ingredients.</p>
+                            </div>
+                        </div>
+                        <!-- ==========feedback card 3============ -->
+                        <div class="feedback-card">
+                            <img class="feeds-image" src="assets/img/ali shaikh.jpg">
+                            <div class="feedback-text">
+                                <div class="feedback-stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <h6>Ali shaikh</h6>
+                                <p>The snack recipes are nutritious, simple, and well explained. They are perfect for
+                                    quick and healthy eating.</p>
+                            </div>
+                        </div>
+                        <!-- ==========feedback card 4============ -->
+                        <div class="feedback-card">
+                            <img class="feeds-image" src="assets/img/rumaisa.avif">
+                            <div class="feedback-text">
+                                <div class="feedback-stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                                <h6>Rumaisa Abraa</h6>
+                                <p>The snack recipes are nutritious, simple, and well explained. They are perfect for
+                                    quick and healthy eating.</p>
+                            </div>
+                        </div>
+                        <!-- =========feedback card 5========== -->
+                        <div class="feedback-card">
+                            <img class="feeds-image" src="assets/img/hania.jpg">
+                            <div class="feedback-text">
+                                <div class="feedback-stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                                <h6>Hania</h6>
+                                <p>I love how easy they are to make and how satisfying they are without feeling heavy
+                                </p>
+                            </div>
+                        </div>
+                        <!-- =========feedback card 6========== -->
+                        <div class="feedback-card">
+                            <img class="feeds-image" src="assets/img/haroon.png">
+                            <div class="feedback-text">
+                                <div class="feedback-stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                                <h6>Haroon </h6>
+                                <p>These quick snacks are perfect for when I’m short on time but still want something
+                                    tasty and healthy.</p>
+                            </div>
+                        </div>
+                        <!-- =========feedback card 7========== -->
+                        <div class="feedback-card">
+                            <img class="feeds-image" src="assets/img/Emma.jpg">
+                            <div class="feedback-text">
+                                <div class="feedback-stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                                <h6>Emma jack </h6>
+                                <p>A lifesaver for busy days—delicious and ready in minutes!.</p>
+                            </div>
+                        </div>
+                        <!-- =========feedback card 8========== -->
+                        <div class="feedback-card">
+                            <img class="feeds-image" src="assets/img/Oliver.jpg">
+                            <div class="feedback-text">
+                                <div class="feedback-stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                                <h6>Oliver</h6>
+                                <p>Finally, snacks that are quick to make and actually taste amazing</p>
+                            </div>
+                        </div>
+                        <!-- =========feedback card 9========== -->
+                        <div class="feedback-card">
+                            <img class="feeds-image" src="assets/img/Zhang Wei.jpg">
+                            <div class="feedback-text">
+                                <div class="feedback-stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                                <h6>Zhang Wei</h6>
+                                <p>These snacks make my hectic days so much easier and tastier.</p>
+                            </div>
+                        </div>
+                        <!-- =========feedback card 10========== -->
+                        <div class="feedback-card">
+                            <img class="feeds-image" src="assets/img/i dont know.png">
+                            <div class="feedback-text">
+                                <div class="feedback-stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                                <h6>i dont know</h6>
+                                <p>These snacks disappear faster than my willpower—so tasty!😄</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ========Div 2 feedback container end ====== -->
+
+            <!-- ===========Right SIDE=========== -->
+            <!-- =====raitingchart Div 1 start====== -->
+            <div class="col-12 col-md-6">
+                <div class="box rait-chart">
+                    <div class="rating-summary">
+                        <div class="average-rating">
+                            <span class="avg-number">4.3</span>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                        </div>
+                        <span class="total-ratings">⭐50+ happy customers</span>
+                    </div>
+                </div>
+                <!-- ======raitingchart Div1 end====== -->
+                <div class="box">
+                    <!-- ========== email DOLL FORM START ========== -->
+                    <section class="email-section">
+                        <div class="email-container">
+
+                            <!-- Doll -->
+                            <div class="dollform cover-eyes mb-3" id="loginDoll">
+                                <img src="assets/img/doll.png" alt="Doll">
+                            </div>
+                            <h2 class="getintouch">Add a Review</h2>
+                            <div class="stars-form mb-2" id="starRating">
+                                <i class="fa fa-star-o" data-value="1"></i>
+                                <i class="fa fa-star-o" data-value="2"></i>
+                                <i class="fa fa-star-o" data-value="3"></i>
+                                <i class="fa fa-star-o" data-value="4"></i>
+                                <i class="fa fa-star-o" data-value="5"></i>
+                            </div>
+                            <input type="hidden" id="ratingValue" name="rating">
+                            <form id="reviewForm" class="w-100">
+                                <input type="text" class="form-control mb-2" id="userName" placeholder="Name" required>
+                                <input type="email" class="form-control mb-2" placeholder="Email address" required>
+                                <input class="feedbackmsig form-control mb-2" id="userFeedback" type="text"
+                                    placeholder="Write Feedback" required>
+                            </form>
+                            <button type="submit" class="emailformbtn btn btn-primary w-100" id="submitReview">Send
+                                feedback</button>
+                            <p class="text-success mt-2">Thank you for your feedback </p>
+
+                        </div>
+                    </section>
+                </div>
+                <!-- ========== email DOLL FORM END ========== -->
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="footer-top-text text-center my-4">
+        <p>Loved our snacks? Leave a review or join our newsletter! 🍪
+        </p>
+    </div>
+
+    <!--========== footer start ==========-->
+    <footer class="main-footer">
+        <!-- Newsletter -->
+        <div class="foot text-center">
+            <img src="assets/img/logo.jpg" class="footer-logo ">
+            <h4>
+                Get the <span class="foot-latest">latest healthy snack recipes</span><br>
+                straight to your inbox!
+            </h4>
+            <p class="footpara">Join our newsletter for delicious and nutritious snack ideas</p>
+            <button class="subscribe-btn" onclick="alert('Thanks for subscribing!')">
+                Subscribe
+            </button>
+        </div>
+        <!-- Footer Links -->
+
+        <div class="container-foot text-center ">
+            <div class="row text-center">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <h5 class="footlinkheading">Quick Links</h5>
+                    <a href="index.html" class="footer-link">
+
+                        <i class="fa fa-home"></i>&nbsp;Home</a>
+                    <a href="gallery.html" class="footer-link">
+
+                        <i class="fa fa-image"></i>&nbsp;Gallery</a>
+
+                    <a href="index.html#categories" class="footer-link">
+
+                        <i class="fa fa-list"></i>&nbsp;Categories</a>
+                    <a href="index.html#flexpopular" class="footer-link">
+
+                        <i class="fa fa-cutlery"></i>&nbsp;Recipes</a>
+                    <a href="review.html" class="footer-link">
+
+                        <i class="fa fa-star"></i>&nbsp; Reviews</a>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3">
+                    <h5 class="footlinkheading">Address</h5>
+                    <p class="footer-link">
+                        <a href="https://www.google.com/maps/search/133+Healthy+St+Snackville+CA+90210" target="_blank">
+                            133 Healthy St<br>
+                            Snackville, CA 90210
+                        </a>
+                    </p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <h5 class="footlinkheading">Information</h5>
+                    <p class="footer-link">
+                        <i class="fa fa-phone"></i>&nbsp;
+                        <a href="tel:+12345678900">+1 (234) 567-8900</a>
+
+                    </p>
+                    <p class="footer-link">
+                        <i class="fa fa-envelope"></i>&nbsp;
+                        <a href="mailto:info@snackville.com">info@snackville.com</a>
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-3 social-icons text-center text-md-start">
+
+                    <a href="javascript:void(0)" onclick="navigator.share({ 
+                     title: 'My Website', 
+                     url: window.location.href 
+                    })">
+                        <i class="fa fa-share-alt" style="font-size:24px" id="linkfoot"></i>
+                    </a>
+                    <a href="https://www.facebook.com/share/1B8F1axPrP/"> <i class="fa fa-facebook-f"
+                            style="font-size:24px" id="linkfoot"></i></a>
+                    <a href="https://www.instagram.com/aptechscheme33?igsh=cWRkdjJkcDZicDZ0"> <i class="fa fa-instagram"
+                            style="font-size:24px" id="linkfoot"></i></a>
+                    <a href="contact.html" target="_blank" id="top-link"><i class="fa fa-phone"></i></a>
+                </div>
+            </div>
+            <hr class="text-white">
+            <p class="text-center my-3 text-white">© 2026 Quick Snacks. All Rights Reserved.</p>
+        </div>
+        </div>
+    </footer>
+
+    <!--======== footer END =========-->
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <!--main js link-->
+    <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

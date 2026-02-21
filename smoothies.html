@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Quick Snacks</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+  <!-- icon link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- style link-->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- ===== FONT AWESOME ICONS ===== -->
+  <!-- Icons (stars, chef, social icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- icon link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- categories link-->
+  <link rel="stylesheet" href="assets/css/categories.css">
+
+</head>
+
+<body>
+  <!-- ==============top-mininav-start=============== -->
+  <div class="top-navbar">
+    <div class="top-right">
+      <h6 class="top-nav-line">Healthy Bites for Busy Lives</h6>
+    </div>
+    <div class="top-left">
+      <a href="https://www.facebook.com/share/1B8F1axPrP/" target="_blank" id="top-link"><i
+          class="fa fa-facebook"></i></a>
+      <a href="https://www.instagram.com/aptechscheme33?igsh=cWRkdjJkcDZicDZ0" target="_blank" id="top-link"><i
+          class="fa fa-instagram"></i></a>
+
+      <a href="contact.html" target="_blank" id="top-link"><i class="fa fa-phone"></i></a>
+    </div>
+  </div>
+  <!-- ==============top-mininav-stop=============== -->
+  <!--======== navbar start =========-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a href="index.html">
+        <img src="assets/img/logo2.png" alt="" class="limg">
+      </a>
+      <h4 class="quick">Quick Snacks</h4>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse navbar-bg" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-pill">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <li>
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+
+          <!-- Main Dropdown -->
+          <li class="dropdown">
+            <a class="nav-link  dropdown-toggle" href="index.html#categories" role="button" data-bs-toggle="dropdown">
+              Categories
+            </a>
+
+            <ul class="dropdown-menu">
+
+              <li><a class="dropdown-item" href="healthy.html">Healthy snacks</a></li>
+              <li><a class="dropdown-item" href="easyonstomach.html">Easy on stomach</a></li>
+
+              <li><a class="dropdown-item" href="lightsnacks.html">Snacks for kids</a></li>
+              <li><a class="dropdown-item" href="smoothies.html">Smoothies</a></li>
+
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link " href="index.html#popular">Recipes</a>
+          </li>
+          <li>
+            <a class="nav-link" href="review.html">Reviews</a>
+          </li>
+          <li>
+            <a class="nav-link" href="index.html#about">About us</a>
+          </li>
+          <li>
+            <a class="nav-link" href="contact.html">Contact us</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!--======== navbar end =========-->
+  <!--======== carousel start ========-->
+  <div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/categories img/smoothies banner.png" alt="slide1" class="d-block w-100 slide-1">
+
+      </div>
+    </div>
+  </div>
+  <!--========= carousel end ==========-->
+
+  <!-- ===== Special Offer ===== -->
+  <div class="container my-5">
+    <h3 class="special-h3 text-center mb-5">Special Item</h3>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-10 col-sm-12">
+        <div class="main d-flex align-items-center justify-content-between"
+          style="background:linear-gradient(to right, #e2e985, #84880d);">
+
+          <div class="main-text">
+            <h3 class="main-h3">Pistachio smoothie</h3>
+            <p>Pistachio smoothie is a healthy and creamy drink.</p>
+          </div>
+
+          <div class="image-box-main">
+            <img src="assets/categories img/pishtashio.jpg" class="main-img" alt="" width="100%">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Seasonal Salads ===== -->
+  <div class="container my-5">
+    <center>
+      <h2 class="section-h2 ">Fresh & Healthy Smooth Beverages</h2>
+    </center>
+    <div class="row gy-5">
+      <div class="slider-track ">
+        <!--card start 1-->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12 card-1">
+          <div class="light-card">
+            <div class="image-box">
+              <img src="assets/categories img/9.jpg" width="70%">
+            </div>
+            <p class="category">Berry Smoothie</p>
+
+            <!-- Button to open modal -->
+            <button class="btn btn-dark light-btn" data-bs-toggle="modal" data-bs-target="#recipeModal">
+              View
+            </button>
+          </div>
+        </div>
+        <!--card end 1-->
+        <!--card start 2-->
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12 card-2">
+          <div class="light-card">
+            <div class="image-box">
+              <img src="assets/categories img/10.jpg" width="70%">
+            </div>
+            <p class="category">Papaya Juice</p>
+            <!-- Button to open modal -->
+            <button class="btn btn-dark light-btn" data-bs-toggle="modal" data-bs-target="#recipeModa2">
+              View
+            </button>
+          </div>
+        </div>
+        <!--card end 2-->
+        <!--card start 3-->
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12 card-3">
+          <div class="light-card">
+            <div class="image-box">
+              <img src="assets/categories img/11.jpg" width="70%">
+            </div>
+            <p class="category">Banana Chocolate Smoothie</p>
+            <!-- Button to open modal -->
+            <button class="btn btn-dark light-btn" data-bs-toggle="modal" data-bs-target="#recipeModa3">
+              View
+            </button>
+          </div>
+        </div>
+        <!--card end 3-->
+        <!--card start 4-->
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12 card-4">
+          <div class="light-card">
+            <div class="image-box">
+              <img src="assets/categories img/12.jpg" width="70%">
+            </div>
+            <p class="category">Mixed Berry Smoothie</p>
+            <!-- Button to open modal -->
+            <button class="btn btn-dark light-btn" data-bs-toggle="modal" data-bs-target="#recipeModal4">
+              View
+            </button>
+          </div>
+        </div>
+        <!--card end 4-->
+        <!--card start 5-->
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12 card-5">
+          <div class="light-card">
+            <div class="image-box">
+              <img src="assets/categories img/23.jpg" width="70%">
+            </div>
+            <p class="category">Dark Chocolate Smoothie</p>
+            <button class="btn btn-dark light-btn" data-bs-toggle="modal" data-bs-target="#recipeModal5">
+              View
+            </button>
+          </div>
+        </div>
+        <!--card end 5-->
+
+
+
+      </div>
+    </div>
+  </div>
+  <!--MODAL START 1-->
+  <div class="modal fade" id="recipeModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title">Snowman Cheesecake Cups</h5>
+        </div>
+
+        <div class="modal-body text-center">
+          <img src="assets/categories img/9.jpg" class="img-fluid mb-3" alt="Salad">
+
+          <h6 class="text-start fw-bold mt-3">Ingredients</h6>
+          <ul class="text-start small">
+            <li>Cream cheese</li>
+            <li> Fresh cream</li>
+            <li> Sugar</li>
+            <li> Chocolate biscuits (crushed)</li>
+            <li> Chocolate chips / candy (decoration)</li>
+          </ul>
+          <h6 class="text-start fw-bold mt-3">Description</h6>
+          <p class="text-muted text-start small">
+            Cream cheese is blended with sugar and fresh cream until smooth. The mixture is layered with crushed
+            chocolate biscuits in serving cups. This dessert provides calcium and energy while offering a creamy and
+            satisfying taste.
+          </p>
+          <div class="modal-actions">
+            <span class="like-btn" data-liked="false"><i class="fa-regular fa-thumbs-up"></i><small>0</small></span>
+            <span class="unlike-btn" data-unliked="false">
+              <i class="fa-regular fa-thumbs-down"></i><small>0</small></span>
+            <span class="share-btn">
+              <i class="fa-solid fa-share-nodes"></i>
+            </span>
+
+          </div>
+          <!-- Bootstrap Alert (Hidden by default) -->
+          <div id="downloadAlert" class="alert alert-success mt-3 d-none" role="alert">
+            Your recipe has been downloaded successfully.
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="assets/dawonload.docx/]smoothies.docx" class="btn btn-dark light-btn" onclick="showAlert()">
+            Download
+          </a>
+
+          <button class="btn btn-dark light-btn" data-bs-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--MODAL 1 END-->
+  <!--MODAL START 2-->
+  <div class="modal fade" id="recipeModa2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title">Berry Smoothie</h5>
+        </div>
+
+        <div class="modal-body text-center">
+          <img src="assets/categories img/10.jpg" class="img-fluid mb-3" alt="Salad">
+
+          <h6 class="text-start fw-bold mt-3">Ingredients</h6>
+
+          <ul class="text-start small">
+            <li> Berries (strawberry, blueberry, raspberry)</li>
+            <li>Yogurt or milk</li>
+            <li>Honey or sweetener</li>
+            <li>Ice cubes</li>
+          </ul>
+          <h6 class="text-start fw-bold mt-3">Description</h6>
+          <p class="text-muted text-start small">
+            This smoothie is made using fresh strawberries, blueberries, yogurt, and natural sweeteners. All ingredients
+            are blended until smooth to achieve a thick and creamy texture. It is rich in antioxidants that support
+            immunity and skin health. The drink also provides natural energy and aids digestion.
+
+
+          </p>
+          <div class="modal-actions">
+            <span class="like-btn" data-liked="false"><i class="fa-regular fa-thumbs-up"></i><small>0</small></span>
+            <span class="unlike-btn" data-unliked="false">
+              <i class="fa-regular fa-thumbs-down"></i><small>0</small></span>
+            <span class="share-btn">
+              <i class="fa-solid fa-share-nodes"></i>
+            </span>
+
+          </div>
+          <!-- Bootstrap Alert (Hidden by default) -->
+          <div id="downloadAlert" class="alert alert-success mt-3 d-none" role="alert">
+            Your recipe has been downloaded successfully.
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="assets/dawonload.docx/]smoothies.docx" class="btn btn-dark light-btn" onclick="showAlert()">
+            Download
+          </a>
+
+
+          <button class="btn btn-dark light-btn" data-bs-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--MODAL 2 END-->
+  <!--MODAL START 3-->
+  <div class="modal fade" id="recipeModa3" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title">Papaya Juice</h5>
+        </div>
+
+        <div class="modal-body text-center">
+          <img src="assets/categories img/11.jpg" class="img-fluid mb-3" alt="Salad">
+
+          <h6 class="text-start fw-bold mt-3">Ingredients</h6>
+
+
+          <ul class="text-start small">
+            <li>Papaya</li>
+            <li>Water or milk</li>
+            <li>Honey or sugar</li>
+            <li>Ice cubes</li>
+          </ul>
+          <h6 class="text-start fw-bold mt-3">Description</h6>
+          <p class="text-muted text-start small">
+            Papaya juice is prepared from ripe papaya, water, and a small amount of lemon juice. The fruit is peeled,
+            chopped, and blended until a smooth liquid is formed. It contains digestive enzymes that improve gut health.
+            This juice also supports immunity and promotes clear skin.
+          </p>
+          <div class="modal-actions">
+            <span class="like-btn" data-liked="false"><i class="fa-regular fa-thumbs-up"></i><small>0</small></span>
+            <span class="unlike-btn" data-unliked="false">
+              <i class="fa-regular fa-thumbs-down"></i><small>0</small></span>
+            <span class="share-btn">
+              <i class="fa-solid fa-share-nodes"></i>
+            </span>
+
+          </div>
+          <!-- Bootstrap Alert (Hidden by default) -->
+          <div id="downloadAlert" class="alert alert-success mt-3 d-none" role="alert">
+            Your recipe has been downloaded successfully.
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="assets/dawonload.docx/]smoothies.docx" class="btn btn-dark light-btn" onclick="showAlert()">
+            Download
+          </a>
+          <button class="btn btn-dark light-btn" data-bs-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--MODAL 3 END-->
+  <!--MODAL START 4-->
+  <div class="modal fade" id="recipeModal4" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title">Banana Chocolate Smoothie</h5>
+        </div>
+
+        <div class="modal-body text-center">
+          <img src="assets/categories img/12.jpg" class="img-fluid mb-3" alt="Salad">
+
+          <h6 class="text-start fw-bold mt-3">Ingredients</h6>
+          <ul class="text-start small">
+            <li></li>Banana</li>
+            <li>Milk</li>
+            <li>Cocoa powder or chocolate syrup</li>
+            <li>Honey or sugar (optional)</li>
+
+            <li>Ice cubes</li>
+          </ul>
+          <h6 class="text-start fw-bold mt-3">Description</h6>
+          <p class="text-muted text-start small">
+            This smoothie is made with ripe bananas, milk, cocoa powder, and a light sweetener. All ingredients are
+            blended together until creamy and well combined. It provides quick energy and is rich in potassium. The
+            smoothie helps improve mood and supports muscle function.
+
+
+          </p>
+          <div class="modal-actions">
+            <span class="like-btn" data-liked="false"><i class="fa-regular fa-thumbs-up"></i><small>0</small></span>
+            <span class="unlike-btn" data-unliked="false">
+              <i class="fa-regular fa-thumbs-down"></i><small>0</small></span>
+            <span class="share-btn">
+              <i class="fa-solid fa-share-nodes"></i>
+            </span>
+
+          </div>
+          <!-- Bootstrap Alert (Hidden by default) -->
+          <div id="downloadAlert" class="alert alert-success mt-3 d-none" role="alert">
+            Your recipe has been downloaded successfully.
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="assets/dawonload.docx/]smoothies.docx" class="btn btn-dark light-btn" onclick="showAlert()">
+            Download
+          </a>
+
+          <button class="btn btn-dark light-btn" data-bs-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--MODAL 4 END-->
+
+  <!--MODAL START 5-->
+  <div class="modal fade" id="recipeModal5" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title">Dark Chocolate Smoothie</h5>
+        </div>
+
+        <div class="modal-body text-center">
+          <img src="assets/categories img/23.jpg" class="img-fluid mb-3" alt="">
+
+          <h6 class="text-start fw-bold mt-3">Ingredients</h6>
+          <ul class="text-start small">
+            <li>Dark chocolate or cocoa powder</li>
+
+            <li>Milk or almond milk</li>
+
+            <li>Banana (optional for creaminess)</li>
+
+            <li>Honey or sweetener</li>
+
+            <li>Ice cubes</li>
+
+
+          </ul>
+          <h6 class="text-start fw-bold mt-3">Description</h6>
+          <p class="text-muted text-start small">
+            Dark Chocolate Smoothie is a rich and creamy drink loved by chocolate lovers. It has a bold, intense flavor
+            from dark chocolate that feels indulgent yet healthy. You can make it smooth and thick by adding milk or a
+            banana. It’s perfect as a quick energy boost or a delicious treat anytime.
+          </p>
+          <div class="modal-actions">
+            <span class="like-btn" data-liked="false"><i class="fa-regular fa-thumbs-up"></i><small>0</small></span>
+            <span class="unlike-btn" data-unliked="false">
+              <i class="fa-regular fa-thumbs-down"></i><small>0</small></span>
+            <span class="share-btn">
+              <i class="fa-solid fa-share-nodes"></i>
+            </span>
+
+          </div>
+          <!-- Bootstrap Alert (Hidden by default) -->
+          <div id="downloadAlert" class="alert alert-success mt-3 d-none" role="alert">
+            Your recipe has been downloaded successfully.
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="assets/dawonload.docx/]smoothies.docx" class="btn btn-dark light-btn" onclick="showAlert()">
+            Download
+          </a>
+
+          <button class="btn btn-dark light-btn" data-bs-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--MODAL 5 END-->
+
+
+  <!--========== footer start ==========-->
+  <footer class="main-footer">
+    <!-- Newsletter -->
+    <div class="foot text-center">
+      <img src="assets/img/logo.jpg" class="footer-logo ">
+      <h4>
+        Get the <span class="foot-latest">latest healthy snack recipes</span><br>
+        straight to your inbox!
+      </h4>
+      <p class="footpara">Join our newsletter for delicious and nutritious snack ideas</p>
+      <button class="subscribe-btn" onclick="alert('Thanks for subscribing!')">
+        Subscribe
+      </button>
+    </div>
+    <!-- Footer Links -->
+
+    <div class="container-foot text-center ">
+      <div class="row text-center">
+        <div class="col-12 col-sm-6 col-md-3">
+          <h5 class="footlinkheading">Quick Links</h5>
+          <a href="index.html" class="footer-link">
+
+            <i class="fa fa-home"></i>&nbsp;Home</a>
+          <a href="gallery.html" class="footer-link">
+
+            <i class="fa fa-image"></i>&nbsp;Gallery</a>
+
+          <a href="index.html#categories" class="footer-link">
+
+            <i class="fa fa-list"></i>&nbsp;Categories</a>
+          <a href="index.html#flexpopular" class="footer-link">
+
+            <i class="fa fa-cutlery"></i>&nbsp;Recipes</a>
+          <a href="review.html" class="footer-link">
+
+            <i class="fa fa-star"></i>&nbsp; Reviews</a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <h5 class="footlinkheading">Address</h5>
+          <p class="footer-link">
+            <a href="https://www.google.com/maps/search/133+Healthy+St+Snackville+CA+90210" target="_blank">
+              133 Healthy St<br>
+              Snackville, CA 90210
+            </a>
+          </p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <h5 class="footlinkheading">Information</h5>
+          <p class="footer-link">
+            <i class="fa fa-phone"></i>&nbsp;
+            <a href="tel:+12345678900">+1 (234) 567-8900</a>
+
+          </p>
+          <p class="footer-link">
+            <i class="fa fa-envelope"></i>&nbsp;
+            <a href="mailto:info@snackville.com">info@snackville.com</a>
+          </p>
+        </div>
+
+        <div class="col-12 col-md-3 social-icons text-center text-md-start">
+
+          <a href="javascript:void(0)" onclick="navigator.share({ 
+                     title: 'My Website', 
+                     url: window.location.href 
+                    })">
+            <i class="fa fa-share-alt" style="font-size:24px" id="linkfoot"></i>
+          </a>
+          <a href="https://www.facebook.com/share/1B8F1axPrP/"> <i class="fa fa-facebook-f" style="font-size:24px"
+              id="linkfoot"></i></a>
+          <a href="https://www.instagram.com/aptechscheme33?igsh=cWRkdjJkcDZicDZ0"> <i class="fa fa-instagram"
+              style="font-size:24px" id="linkfoot"></i></a>
+          <a href="contact.html" target="_blank" id="top-link"><i class="fa fa-phone"></i></a>
+        </div>
+      </div>
+      <hr class="text-white">
+      <p class="text-center my-3 text-white">© 2026 Quick Snacks. All Rights Reserved.</p>
+    </div>
+    </div>
+  </footer>
+
+  <!--======== footer END =========-->
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script>
+
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+
+</html>

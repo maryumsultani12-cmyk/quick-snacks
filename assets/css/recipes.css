@@ -1,0 +1,230 @@
+.main {
+background: linear-gradient(135deg, #CDEAC0 ,#84a368 );
+
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(38, 59, 31, 0.733);
+
+}
+
+/* ================AVOCADO CARD START========*/
+/* AVOCADO RIGHT SIDE CARD START*/
+.avo-card {
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.733);
+  transition: 0.3s ease;
+  background-color: white;
+  overflow: hidden;
+  margin-top: 150px;
+
+}
+
+.avo-card img {
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.avo-card-heading {
+  color: rgb(97, 8, 8);
+  font-family: Agbalumo, Arial, sans-serif;
+  text-align: center;
+  font-weight: 800;
+}
+
+.avo-card-title {
+  color: rgb(97, 8, 8);
+  font-weight: 200;
+  font-family: Agbalumo, Arial, sans-serif;
+  text-align: center;
+}
+
+.avo-card-text {
+  color: black;
+  font-weight: 500;
+
+}
+
+.avo-cards-wrapper {
+  justify-content: space-evenly;
+  align-items: stretch;
+  max-width: 1200px;
+  margin: 30px auto 0;
+  gap: 20px;
+  flex-wrap: nowrap;
+
+}
+
+.avo-card-h4 {
+  position: relative;
+  top: 10px;
+  left: 20px;
+  font-family: Agbalumo, Arial, sans-serif;
+  color: rgb(146, 36, 8);
+}
+
+.card-text-p {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  font-family: poppins, Arial, sans-serif;
+  color: black;
+}
+
+.avo-card-ul {
+  margin-left: 10px;
+  font-family: poppins, Arial, sans-serif;
+  color: black;
+}
+
+/*===============AVOCADO LEFT SIDE CARD END==============*/
+
+/*===============AVOCADO RECIPE START==============*/
+/*avocado1*/
+.avocado1 {
+  margin-left: 70px;
+  margin-top: 70px;
+}
+
+h5 {
+  color: black;
+  font-family: poppins, Arial, sans-serif;
+
+}
+
+/*avocado2*/
+.avocado2 {
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+.avo-ul1 {
+  margin-left: -10px;
+  font-family: poppins, Arial, sans-serif;
+  color: black;
+}
+
+/*avocado3*/
+.avocado3 {
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+.avo-ol1 {
+  margin-left: -10px;
+  font-family: poppins, Arial, sans-serif;
+  color: black;
+
+}
+
+/*avocado4*/
+.avocado4 {
+  margin-top: 20px;
+  margin-left: 70px;
+}
+
+.avo-ul2 {
+  margin-left: -10px;
+  font-family: poppins, Arial, sans-serif;
+  color: black;
+}
+
+/* ALL H3*/
+h3 {
+  font-family: Agbalumo, Arial, sans-serif;
+  color: rgb(146, 36, 8);
+}
+
+/* ALL AVOCADO PARA*/
+.avo-p {
+  font-family: poppins, Arial, sans-serif;
+  color: black;
+}
+
+.heading-p {
+  font-family: poppins, Arial, sans-serif;
+  color: rgb(118, 46, 20);
+  font-weight: 500;
+}
+
+/* FOR TOTAL TIME*/
+.span-1 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 50px;
+  font-family: poppins, Arial, sans-serif;
+  color: black;
+}
+
+.span-2 {
+  padding-left: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 50px;
+  font-family: poppins, Arial, sans-serif;
+  color: black;
+
+}
+
+/* BG COLOR DEKH LAYNA */
+/* ======================AVOCADO RECIPE END===============*/
+/* ======================AVOCADO CARD END===============*/
+/*======MEDIA QUERY====================*/
+/* FOR TAB*/
+@media (max-width: 991px) {
+
+  .sub-main {
+    width: 100%;
+  }
+
+  .avocado1 {
+    margin-left: 40px;
+    padding: 20px;
+  }
+
+
+  .avocado2,
+  .avocado3,
+  .avocado4 {
+    margin-left: 40px;
+    padding: 20px;
+    margin-top: -50px;
+  }
+
+  .avo-p,
+  .card-text-p,
+  .avo-card-ul li,
+  .avo-ul1 li,
+  .avo-ul2 li,
+  .avo-ol1 li {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .avo-card {
+    margin: 40px auto;
+    width: 100% !important;
+    max-width: 350px;
+  }
+}
+
+/* ===== for  MOBILE ===== */
+@media (max-width: 576px) {
+
+  h3 {
+    font-size: 22px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  .avo-card-ul {
+    margin-right: -20px;
+  }
+
+  .span-1,
+  .span-2 {
+    display: block;
+    line-height: 28px;
+  }
+}

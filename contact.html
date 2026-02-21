@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Quick Snacks</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- font link -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Alex+Brush&family=Fjalla+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- icon link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- css link-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- contact link -->
+    <link rel="stylesheet" href="assets/css/contact.css">
+</head>
+
+<body>
+    <!-- ==============top-mininav-start=============== -->
+    <div class="top-navbar">
+        <div class="top-right">
+            <h6 class="top-nav-line">Healthy Bites for Busy Lives</h6>
+        </div>
+        <div class="top-left">
+            <a href="https://www.facebook.com/share/1B8F1axPrP/" target="_blank" id="top-link"><i
+                    class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/aptechscheme33?igsh=cWRkdjJkcDZicDZ0" target="_blank" id="top-link"><i
+                    class="fa fa-instagram"></i></a>
+            <a href="contact.html" target="_blank" id="top-link"><i class="fa fa-phone"></i></a>
+        </div>
+    </div>
+    <!-- ==============top-mininav-stop=============== -->
+    <!--======== navbar start =========-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a href="index.html">
+                <img src="assets/img/logo2.png" alt="" class="limg">
+            </a>
+
+            <h4 class="quick">Quick Snacks</h4>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navbar-bg" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-pill">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+
+                    <!-- Main Dropdown -->
+                    <li class="dropdown">
+                        <a class="nav-link  dropdown-toggle" href="index.html#categories" role="button"
+                            data-bs-toggle="dropdown">
+                            Categories
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li><a class="dropdown-item" href="healthy.html">Healthy snacks</a></li>
+                            <li><a class="dropdown-item" href="easyonstomach.html">Easy on stomach</a></li>
+
+                            <li><a class="dropdown-item" href="lightsnacks.html">Snacks for kids</a></li>
+                            <li><a class="dropdown-item" href="smoothies.html">Smoothies</a></li>
+
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="nav-link " href="index.html#popular">Recipes</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="review.html">Reviews</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="index.html#about">About us</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="contact.html">Contact us</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!--======== navbar end =========-->
+    <!-- =========Top Heading ========== -->
+    <div class="head text-center my-5">
+        <h1>Contact Us </h1>
+        <h4>Get in touch with us for inquiries, support, or collaboration opportunities.<br> We’re here to help and look
+            forward to hearing from you.</h4>
+
+    </div>
+    <!-- =========FORM + CONTACT INFO + CONTACT HOURS ========= -->
+    <div class="container my-5">
+        <!-- ====MAIN-ROW==== -->
+
+        <div class="row g-4">
+            <!-- MAIN COL-6 -->
+            <!--=========== LEFT SIDE : LEAVE MESSAGE ======-->
+            <div class="col-lg-6 col-md-12">
+                <div class="top-bg-box h-100">
+                    <h2 class="text-center mb-4">Leave Message</h2>
+
+                    <!-- =======FORM======== -->
+                    <form id="contactForm" onsubmit="return handleFormSubmit(event)">
+                        <div class="row g-3">
+                            <div class="col-md-6 mt-5">
+                                <input type="text" id="userName" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6 mt-5">
+                                <input type="email" id="userEmail" placeholder="Your Email" required>
+                            </div>
+                            <div class="col-12 mt-5">
+                                <textarea rows="5" id="userMessage" placeholder="Your Message" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn px-4">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- ========FORM END HERE========= -->
+                </div>
+            </div>
+
+            <!-- =========RIGHT SIDE======== -->
+            <!-- ==========CONTACT INFO + BUSINESS HOUR================ -->
+            <div class="col-lg-6 col-md-12">
+
+                <!-- CONTACT INFO -->
+                <div class="top-bg-box mb-4">
+                    <h2 class="mb-4 contact">Contact Information</h2>
+
+                    <p class="contact-row">
+                        <i class="fa fa-phone me-2" id="icons" style="font-size: 30px;"></i>
+                        <span class="title">Phone</span><br>
+                        <span class="text">+1 (234) 567-8900 </span>
+                    </p>
+                    <p class="contact-row">
+                        <i class="fa fa-envelope me-2 " id="icons" style="font-size: 30px;"></i>
+                        <span class="title">Email</span><br>
+                        <span class="text ">info@snackville.com</span>
+
+                    </p>
+                    <p class="contact-row">
+                        <i class="fa fa-map-marker me-2" id="icons" style="font-size: 30px;"></i>
+                        <span class="title">Address</span><br>
+                        <span class="text">R-28 Pioneer, Phase 2, Karachi</span>
+                    </p>
+                </div>
+
+                <!-- BUSINESS HOURS -->
+                <div class="top-bg-box">
+                    <h2 class="mb-4 business">Business Hours</h2>
+
+                    <div class="row ">
+                        <div class="col-md-4 mb-3">
+                            <h6>MON–FRI</h6>
+                            <p class="time">9:00 am – 8:00 pm</p>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <h6>SATURDAY</h6>
+                            <p class="time">9:00 am – 6:00 pm</p>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <h6>SUNDAY</h6>
+                            <p class="time">9:00 am – 5:00 pm</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- ======ROW======= -->
+    </div>
+    <!-- =====CONTAINER====== -->
+    <!-- =========CONTACT + BUSINESS END HERE=========== -->
+    <!-- ============POPUP MESSAGE============ -->
+    <!-- =========POPUP START========== -->
+    <div class="popup" id="popup">
+        <div class="popup-box">
+            <h2>Thank You! </h2>
+            <p>Your message has been sent successfully.<br>
+                We’ll contact you soon.</p>
+            <button onclick="closePopup()">OK</button>
+        </div>
+    </div>
+    <!-- ========MAP======== -->
+    <div class="map-container mx-5 ">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.548517395222!2d67.11067419999999!3d24.947445899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb3390008cfd9ab%3A0x50570e200b0de0fe!2sAptech%20scheme%2033!5e0!3m2!1sen!2s!4v1768316039699!5m2!1sen!2s"
+            width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+    <!--========== footer start ==========-->
+    <footer class="main-footer">
+        <!-- Newsletter -->
+        <div class="foot text-center">
+            <img src="assets/img/logo.jpg" class="footer-logo ">
+            <h4>
+                Get the <span class="foot-latest">latest healthy snack recipes</span><br>
+                straight to your inbox!
+            </h4>
+            <p class="footpara">Join our newsletter for delicious and nutritious snack ideas</p>
+             <button class="subscribe-btn" onclick="alert('Thanks for subscribing!')">
+                Subscribe
+            </button>
+        </div>
+        <!-- Footer Links -->
+
+        <div class="container-foot text-center ">
+            <div class="row text-center">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <h5 class="footlinkheading">Quick Links</h5>
+                    <a href="index.html" class="footer-link">
+
+                        <i class="fa fa-home"></i>&nbsp;Home</a>
+                    <a href="gallery.html" class="footer-link">
+
+                        <i class="fa fa-image"></i>&nbsp;Gallery</a>
+
+                    <a href="index.html#categories" class="footer-link">
+
+                        <i class="fa fa-list"></i>&nbsp;Categories</a>
+                    <a href="index.html#flexpopular" class="footer-link">
+
+                        <i class="fa fa-cutlery"></i>&nbsp;Recipes</a>
+                    <a href="review.html" class="footer-link">
+
+                        <i class="fa fa-star"></i>&nbsp; Reviews</a>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3">
+                    <h5 class="footlinkheading">Address</h5>
+                    <p class="footer-link">
+                        <a href="https://www.google.com/maps/search/133+Healthy+St+Snackville+CA+90210" target="_blank">
+                            133 Healthy St<br>
+                            Snackville, CA 90210
+                        </a>
+                    </p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <h5 class="footlinkheading">Information</h5>
+                    <p class="footer-link">
+                        <i class="fa fa-phone"></i>&nbsp;
+                        <a href="tel:+12345678900">+1 (234) 567-8900</a>
+
+                    </p>
+                    <p class="footer-link">
+                        <i class="fa fa-envelope"></i>&nbsp;
+                        <a href="mailto:info@snackville.com">info@snackville.com</a>
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-3 social-icons text-center text-md-start">
+
+                    <a href="javascript:void(0)" onclick="navigator.share({ 
+                     title: 'My Website', 
+                     url: window.location.href 
+                    })">
+                        <i class="fa fa-share-alt" style="font-size:24px" id="linkfoot"></i>
+                    </a>
+                    <a href="https://www.facebook.com/share/1B8F1axPrP/"> <i class="fa fa-facebook-f"
+                            style="font-size:24px" id="linkfoot"></i></a>
+                    <a href="https://www.instagram.com/aptechscheme33?igsh=cWRkdjJkcDZicDZ0"> <i class="fa fa-instagram"
+                            style="font-size:24px" id="linkfoot"></i></a>
+                    <a href="contact.html" target="_blank" id="top-link"><i class="fa fa-phone"></i></a>
+                </div>
+            </div>
+            <hr class="text-white">
+            <p class="text-center my-3 text-white">© 2026 Quick Snacks. All Rights Reserved.</p>
+        </div>
+        </div>
+    </footer>
+
+    <!--======== footer END =========-->
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <!--main js link-->
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

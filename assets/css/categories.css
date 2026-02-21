@@ -1,0 +1,532 @@
+body {
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.special-h3 {
+  font-family: "Agbalumo", Arial, sans-serif;
+  font-size: 40px;
+  color: black;
+}
+
+.main {
+  background: wheat;
+  border-radius: 25px;
+  padding: 20px;
+  height: 280px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.main-text {
+  font-family: "Agbalumo", Arial, sans-serif;
+}
+
+.main-h3 {
+  font-size: 42px;
+  color: #000000;
+}
+
+.main-text p {
+  font-family: Arial, sans-serif;
+  color: #000000;
+}
+
+
+.image-box-main {
+  width: 160px;
+}
+
+.main-img {
+  width: 100%;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  animation: float 3s ease-in-out infinite;
+}
+
+/* ===== SPECIAL OFFER IMAGE FLOAT ===== */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* ===== Salads ===== */
+.section-h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 170px;
+  font-family: "Agbalumo", Arial, sans-serif;
+  color: #000000;
+
+
+
+}
+
+.light-card {
+  background: beige;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: 0.3s;
+  height: 300px;
+
+}
+
+.light-card:hover {
+  transform: translateY(-6px);
+}
+
+.image-box {
+  height: 150px;
+  margin: -100px auto 10px;
+}
+
+.image-box img {
+  width: 90%;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.category {
+  font-family: "Agbalumo", Arial, sans-serif;
+
+
+  color: black;
+  font-size: 15px;
+  margin-top: 90px;
+}
+
+.light-btn {
+  background-color: black;
+  color: beige;
+  border: none;
+}
+
+.light-btn:hover {
+  background-color: beige;
+  color: black;
+
+}
+
+
+/* ====================PAGE LOAD ANIMATION================*/
+.section-h2,
+.main {
+  animation: fadeUp 4s ease forwards;
+}
+
+/*  PAGE LOAD ANIMATION */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== CARD HOVER  ===== */
+.salad-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+.image-box img {
+  transition: transform 0.4s ease;
+}
+
+/* ===================== CAROUSEL ===================== */
+.carousel-img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .carousel-img {
+    height: 260px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .carousel-img {
+    height: 200px;
+  }
+}
+
+/* carusel*/
+.slide-1 {
+  height: 500px;
+  object-fit: cover;
+}
+
+/* ================CAROUSEL SLIDE ANIMATION================ */
+
+/* card animation*/
+.outer-container {
+  overflow: hidden;
+  width: 100%;
+  padding: 100px 20px;
+  box-sizing: border-box;
+}
+
+/* Modal Content Styling */
+.modal-content {
+  border-radius: 40px !important;
+  /* Rounded corners like image */
+  border: none;
+  overflow: hidden;
+}
+
+/* Green Header Background */
+.modal-header {
+  background-color: #911e1e;
+  /* Green color from image */
+  color: white;
+  border-bottom: none;
+  padding: 40px 20px;
+  flex-direction: column;
+  align-items: center;
+  border-bottom-left-radius: 50% 20%;
+  /* Curved bottom */
+  border-bottom-right-radius: 50% 20%;
+  height: 200px;
+}
+
+.modal-title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Round Image in Modal */
+.modal-body img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: -120px;
+  border: 5px solid white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Ingredients Section */
+.ingredients-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.ingredient-icon {
+  width: 50px;
+  height: 50px;
+  background: #f8f8f8;
+  border-radius: 12px;
+  padding: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.alert {
+  color: white;
+  background-color: #911e1ef9;
+  border: #911e1e;
+  font-family: Arial, sans-serif;
+  ;
+}
+
+.modal-body h6,
+.modal-body ul,
+.modal-body li {
+  color: black;
+  font-family: Arial, sans-serif;
+  ;
+}
+
+.modal-body p.text-muted {
+  color: #000000;
+  font-family: Arial, sans-serif;
+  ;
+}
+
+/* =====================================================
+   MEDIA QUERY
+   ===================================================== */
+
+/* ---------- MOBILE  ---------- */
+@media (min-width: 0px) and (max-width: 376px) {
+
+  /* SLIDER ANIMATION OFF */
+  .slider-track {
+    animation: none !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    transform: none !important;
+  }
+
+  .slide-1 {
+    display: none !important;
+  }
+
+  /* 1 CARD ROW */
+  .slider-track>div {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* CARD HEIGHT AUTO */
+  .light-card {
+    height: auto;
+    margin-bottom: 40px;
+
+  }
+
+  .card-2,
+  .card-3,
+  .card-4,
+  .card-5,
+  .card-6 {
+    margin-top: 60px;
+  }
+
+  /* SPECIAL OFFER – IMAGE FIRST */
+  .main {
+    flex-direction: column-reverse;
+    text-align: center;
+    height: auto;
+  }
+
+  .image-box-main {
+    margin-bottom: 15px;
+  }
+
+  .image-box img {
+    width: 70%;
+  }
+
+  .main-h3 {
+    font-size: 32px;
+  }
+}
+
+
+/* ---------- TABLET  ---------- */
+@media (min-width: 377px) and (max-width: 600px) {
+
+  .slider-track {
+    animation: none !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    transform: none !important;
+  }
+
+  .slide-1 {
+    display: none !important;
+  }
+
+  /* 1 CARD PER ROW */
+  .slider-track>div {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* CARD HEIGHT AUTO */
+  .light-card {
+    height: auto;
+    margin-bottom: 40px;
+    width: 300px;
+    margin-left: 70px;
+
+
+  }
+
+  .card-2,
+  .card-3,
+  .card-4,
+  .card-5,
+  .card-6 {
+    margin-top: 60px;
+  }
+
+  .main {
+    flex-direction: column-reverse;
+    text-align: center;
+    height: auto;
+  }
+
+  .image-box-main {
+    margin-bottom: 15px;
+
+  }
+
+  .image-box img {
+    width: 70%;
+    height: 180px;
+  }
+
+  .main-h3 {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+
+  /* ===== SLIDER OFF ===== */
+  .slider-track {
+    animation: none !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    transform: none !important;
+    gap: 20px;
+  }
+
+  /* ===== HIDE CAROUSEL IMAGE ===== */
+
+
+  /* ===== 2 CARDS ROW ===== */
+  .slider-track>div {
+    flex: 0 0 48%;
+    max-width: 48%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .category {
+    margin-top: 0;
+  }
+
+  /* ===== CARD STYLE ===== */
+  .light-card {
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 40px;
+  }
+
+  .card-1,
+  .card-2 {
+    margin-top: 0;
+  }
+
+  .card-3,
+  .card-4,
+  .card-5,
+  .card-6 {
+    margin-top: 50px;
+  }
+
+  .main {
+    flex-direction: column-reverse;
+    text-align: center;
+    height: auto;
+  }
+
+  .image-box-main {
+    margin-bottom: 15px;
+  }
+
+  .image-box img {
+    width: 70%;
+    height: 150px;
+  }
+
+  .main-h3 {
+    font-size: 32px;
+  }
+}
+
+/* =====================================================
+   MEDIA QUERY END
+   ===================================================== */
+
+.modal-actions {
+  display: flex;
+}
+
+.like-btn {
+  color: black;
+  font-size: 20px;
+}
+
+.unlike-btn {
+  color: black;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.share-btn {
+  color: black;
+  font-size: 18px;
+  padding-left: 10px;
+
+  cursor: pointer;
+}
+
+.download-btn {
+  color: black;
+
+  padding-left: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.like-btn:hover {
+  color: rgba(41, 39, 39, 0.658);
+}
+
+.unlike-btn:hover {
+  color: rgba(41, 39, 39, 0.658);
+}
+
+.share-btn:hover {
+  color: rgba(41, 39, 39, 0.658);
+}
+
+.download-btn:hover {
+  color: rgba(41, 39, 39, 0.658);
+}
+
+/* ===================== ANIMATION===================== */
+
+.slider-track {
+  display: flex;
+  width: fit-content;
+
+  gap: 20px;
+  animation: scrollLoop 35s linear infinite;
+}
+
+@keyframes scrollLoop {
+  100% {
+    transform: translateX(-30%);
+  }
+}
+
+/* PAUSE ON HOVER */
+.slider-track:hover {
+  animation-play-state: paused;
+}
+
+/* MODAL OPEN  PAUSE */
+body.modal-open .slider-track {
+  animation-play-state: paused;
+}

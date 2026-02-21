@@ -1,0 +1,854 @@
+/* ========== GLOBAL ========== */
+body {
+    background: #f2f2f2;
+}
+.navbar-bg{
+  background-color: #fbf7f7;
+    border-radius: 20px;
+  }
+.page-bg {
+    background-image: url(avabg.3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.Hummus-page-bg {
+    background-image: url(veggi-popular-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.Nut-page-bg {
+    background-image: url(nut-popular-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.smoothie-page-bg {
+    background-image: url(smoothie-popular-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* =================top-mininavbar-start============== */
+.top-navbar {
+    background-color: rgb(182, 16, 16);
+    color: #fff;
+    font-size: 13px;
+    padding: 6px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-left {
+    margin-right: 15px;
+}
+
+.top-nav-line {
+    color: azure;
+}
+
+#top-link {
+    color: azure;
+    padding: 5px;
+}
+/* =================top-mininavbar-end============== */
+
+/* ================ NAVBAR ================= */
+.navbar {
+    position: sticky;
+    top: 0;
+    height: 80px;
+    background-color: white;
+    backdrop-filter: blur(6px);
+    z-index: 100;
+}
+
+.limg {
+    position: relative;
+    left: -70px;
+    border-radius: 60px;
+    height: 80px;
+    width: 80px;
+}
+
+.quick {
+    position: relative;
+    left: -60px;
+    color: rgb(117, 31, 31);
+}
+
+.nav-pill {
+    gap: 8px;
+}
+
+.nav-pill .nav-link {
+    padding: 8px 18px;
+    border-radius: 30px;
+    color: black;
+    transition: 0.3s;
+}
+
+.nav-pill .nav-link:hover,
+.nav-pill .nav-link.active {
+    background-color: rgb(117, 31, 31);
+    color: #fff;
+}
+
+/* ===========DROPDOWN=========== */
+/* for dropdown */
+
+
+.dropdown-menu {
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.dropdown-menu .dropdown-item {
+    border-radius: 20px;
+    padding: 8px 14px;
+    transition: 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: rgb(117, 31, 31);
+    color: #fff;
+}
+
+
+
+/* ================ RECIPE ================= */
+.recipe-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    background: beige;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.title {
+    text-align: center;
+    font-size: 32px;
+    color: #39553b;
+    font-family: "Agbalumo", Arial, sans-serif;
+}
+
+.rating {
+    text-align: center;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.stars {
+    color: gold;
+}
+
+.description {
+    font-size: 15px;
+    line-height: 1.6;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+}
+.Watch-video{
+    color:  #39553b;
+      font-family: "Agbalumo", Arial, sans-serif;
+}
+/* ========== IMAGE ========= */
+#smoothie-recipe-img {
+    width: 100%;
+    height: 500px;
+}
+
+#fruit-nut-recipe-img {
+    width: 100%;
+    height: 500px;
+    
+}
+
+.recipe-img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    transform-style: preserve-3d;
+}
+
+.recipe-img:hover {
+    transform: rotateY(8deg) rotateX(3deg) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* ========== TIME BOX ========= */
+.time-box {
+    display: flex;
+    justify-content: space-between;
+    background: #06640c86;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* ========== INGREDIENTS + IMAGE ========= */
+.ingredients-section {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+    align-items: flex-start;
+}
+
+.ingredients-text {
+    flex: 1;
+}
+
+.ingredients-img {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ingredients-img img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.ingredients li,
+.steps li {
+    margin-bottom: 8px;
+}
+
+.ingredients-heading {
+    font-size: 32px;
+    color: #39553b;
+    font-family: "Agbalumo", Arial, sans-serif;
+}
+
+.instructions-heading {
+    font-size: 32px;
+    color: #39553b;
+    font-family: "Agbalumo", Arial, sans-serif;
+}
+
+.Similar-ava {
+    text-align: center;
+    font-size: 32px;
+    color: #39553b;
+    font-family: "Agbalumo", Arial, sans-serif;
+}
+
+.avo-para {
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+/* ========== VIDEO SECTION ========= */
+.recipe-video {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.video-box iframe {
+    width: 560px;
+    height: 315px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* ========== CHEF CARD ========= */
+.chef-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 60px;
+    padding: 20px;
+    background: #f1f8e9;
+    border-radius: 20px;
+}
+
+.chef-card img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+/* ========== SIMILAR RECIPES ========= */
+.similar {
+    padding: 60px;
+
+}
+
+.card-wrap {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.card-ava-hd {
+    color: #39553b;
+    font-family: "Agbalumo", Arial, sans-serif;
+    font-size: 30px;
+}
+
+.ava-card-img {
+    height: 200px;
+    border-radius: 100px;
+}
+.btn-dark {
+    background-color: #4CAF50 !important; 
+    color: #fff !important;                
+    border: none;                          
+    border-radius: 12px;                   
+    padding: 10px 20px;                    
+    transition: 0.3s ease;
+}
+
+/* Hover effect */
+.btn-dark:hover {
+    background-color: #45a049 !important; 
+    color: #fff;
+    transform: scale(1.05);
+}
+.btn-secondary{
+    background-color: #4CAF50 !important; 
+    color: #fff !important;                
+    border: none;                          
+    border-radius: 12px;                   
+    padding: 10px 20px;                    
+    transition: 0.3s ease; 
+}
+.btn-secondary:hover{
+     background-color: #45a049 !important; 
+    color: #fff;
+    transform: scale(1.05);
+}
+
+
+/* ========== MODALS ========= */
+.modal-content {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+    background-color: #39553b;
+    color: white;
+    border-bottom: none;
+    padding: 20px;
+    font-family: "Agbalumo", Arial, sans-serif;
+
+}
+
+.modal-header .btn-close {
+    filter: brightness(0) invert(1);
+}
+
+.modal-body {
+    padding: 25px;
+    font-size: 16px;
+    color: #333;
+}
+
+.modal-body video {
+    width: 100%;
+    max-height: 300px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.modal-footer {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.modal-footer .btn {
+    border-radius: 10px;
+}
+
+/* RESPONSIVE MODAL */
+@media (max-width: 575px) {
+    .modal-dialog {
+        max-width: 95%;
+        margin: 10px auto;
+    }
+
+    .modal-body {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .modal-body video {
+        height: 200px;
+    }
+
+    .modal-footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+.card{
+    height: 450px;
+    border-radius: 30px;
+    background-color: beige;
+}
+.card-img-top{
+    width: 100%;
+    height: 300px;
+    border-radius: 500px;
+}
+
+@media (min-width: 768px) {
+    .css-modal:target {
+        align-items: center;
+    }
+
+    .css-modal-box {
+        border-radius: 18px;
+    }
+}
+
+.modal-actions {
+    display: flex;
+    gap: 18px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.modal-h3heads {
+    color: #39553b;
+    text-align: center;
+    font-weight: 500;
+    font-family: "Agbalumo", Arial, sans-serif;
+}
+.modal-ul1{
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.modal-p-list {
+    color: black;
+    font-size: 18px;
+}
+
+.like-btn {
+    color: black;
+    font-size: 20px;
+}
+
+.unlike-btn {
+    color: black;
+    font-size: 20px;
+}
+
+.share-btn {
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.download-btn {
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.like-btn:hover {
+    color: rgba(41, 39, 39, 0.658);
+}
+
+.unlike-btn:hover {
+    color: rgba(41, 39, 39, 0.658);
+}
+
+.share-btn:hover {
+    color: rgba(41, 39, 39, 0.658);
+}
+
+.download-btn:hover {
+    color: rgba(41, 39, 39, 0.658);
+}
+
+.close-modal {
+    color: black;
+}
+
+
+/* =========== footer ============ */
+/*  for footer*/
+.main-footer {
+    background: rgb(182, 16, 16);
+    padding-top: 40px;
+    margin-top: 60px;
+    font-family: Arial, sans-serif;
+}
+
+.foot {
+    position: static;
+    padding: 40px 20px;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 0 auto 40px;
+    max-width: 90%;
+}
+
+.footer-logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+}
+
+.footpara {
+    color: white;
+}
+
+
+.foot h4 {
+    color: #2c2c2c;
+}
+
+.foot-latest {
+    color: azure;
+    font-family: Agbalumo, Arial, sans-serif;
+    font-weight: 500;
+}
+
+.subscribe-btn {
+    margin-top: 15px;
+    padding: 10px 25px;
+    background-color: white;
+    color: rgb(182, 16, 16);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footlinkheading {
+    color: azure;
+    padding-left: 30px;
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container-foot .col-3 {
+    padding-left: 40px;
+    text-align: left;
+}
+
+.subscribe-btn:hover {
+    background-color: rgb(190, 7, 7);
+    color: beige;
+}
+
+.container-foot h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.container-foot p {
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.container-foot :hover {
+    color: black;
+}
+
+/* SOCIAL ICONS */
+.social-icons i {
+    font-size: 22px;
+    margin: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.social-icons i:hover {
+    color: rgb(117, 31, 31);
+}
+
+/* FOR FOOTER COL*/
+.container-foot {
+    margin-top: 40px;
+    padding: 30px 0;
+}
+
+/* Footer links default */
+.footer-link {
+    color: white;
+    padding: 6px 14px;
+    border-radius: 50px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    padding-left: 30px;
+    text-align: left;
+    display: block;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Hover effect */
+.footer-link:hover {
+    color: black;
+}
+
+#linkfoot {
+    color: azure;
+    padding-left: 20px;
+    text-align: left;
+}
+
+#linkfoot:hover {
+    color: black;
+}
+
+/* ==================== MEDIA QUERY==================== */
+
+/* ========== FOOTER RESPONSIVE ========== */
+
+/* MOBILE */
+@media (max-width: 575px) {
+    .container-foot {
+        text-align: center;
+    }
+
+    .container-foot .col-12 {
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .footlinkheading {
+        text-align: center;
+    }
+
+    .footer-link {
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .foot h4 {
+        font-size: 18px;
+    }
+
+    .subscribe-btn {
+        padding: 8px 20px;
+    }
+
+    .footer-logo {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* TABLET */
+@media (min-width: 576px) and (max-width: 991px) {
+    .container-foot .col-md-3 {
+        margin-bottom: 25px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 575px) {
+
+    .chef-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+
+    .chef-card img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .recipe-container {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .rating {
+        font-size: 14px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+
+    .ingredients-img {
+        display: flex;
+        justify-content: center;
+        order: -1;
+    }
+
+    .ingredients-section {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 0px;
+    }
+
+    .recipe-img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Video iframe */
+    .video-box iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    .time-box {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    .card {
+        width: 100%;
+        height: 400px;
+    }
+
+    .card-ava-hd {
+        margin-top: 30px;
+    }
+
+    .ava-card-img {
+        border-radius: 50%;
+        height: 190px;
+        width: 75%;
+        margin-left: 30px;
+    }
+
+    #Similar-ava {
+        margin-top: -40px;
+    }
+}
+
+/* TABLET*/
+@media (min-width: 576px) and (max-width: 991px) {
+
+    .recipe-container {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    .ingredients-section {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 0px;
+    }
+
+    .ingredients-img {
+        display: flex;
+        justify-content: center;
+        order: -1;
+    }
+
+    .recipe-img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    /* Video iframe */
+    .video-box iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    /* Similar Cards */
+    .card-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .card {
+        width: 45%;
+        height: 450px;
+    }
+
+    .ava-card-img {
+        height: 250px;
+        border-radius: 50%;
+        width: 85%;
+        margin-left: 30px;
+    }
+
+    .card-ava-hd {
+        margin-top: 30px;
+    }
+
+    #Similar-ava {
+        margin-top: -20px;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 992px) {
+    .ingredients-section {
+        flex-direction: row;
+    }
+
+    .ingredients-img img {
+        max-width: 100%;
+    }
+
+    .video-box iframe {
+        width: 560px;
+        height: 315px;
+    }
+}
+.footer-link a {
+    text-decoration: none;  
+    color: inherit;          
+}
+
+.footer-link a:hover {
+    color: inherit;         
+}
